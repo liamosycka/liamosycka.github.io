@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Esports Zone</title>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+</head>
+<body>
+  <header>
+    <h1>Esports Zone</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="torneos.html">Torneos</a></li>
+      <li><a href="jugadores.html">Jugadores</a></li>
+    </ul>
+  </nav>
+  <div class="row">
+  <div class="column">
+    <img src="./img/faker02.jpg" style="width:100%" class="image">
+    <div class="overlay">
+      <!-- Trigger/Open The Modal -->
+ <button id="myBtn">Faker</button>
+
+ <!-- The Modal -->
+ <div id="myModal" class="modal">
+
+   <!-- Modal content -->
+   <div class="modal-content">
+     <span class="close">&times;</span>
+     <p>Lee Sang-Hyeok, es un jugador profesional surcoreano. Nacido en
+     Seúl, Corea del Sur el 7 de mayo de 1996.</p>
+     <p>Faker es ampliamente considerado como el mejor jugador de League of
+     Legends del mundo. En 2013 ganó su primer Campeonato Mundial, jugando
+   para el equipo SK Telecom T1. Luego volvió a repetir el mismo hito en
+   2015 y 2016.</p>
+   </div>
+
+ </div>
+  </div>
+    </div>
+    <div class="column">
+    <img src="./img/jerAx.jpg" style="width:100%" class="image">
+    <div class="overlay">
+      <button id="myBtn2">S1mple</button>
+
+      <!-- The Modal -->
+      <div id="myModal2" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Oleksandr Kostyliev, es un jugador profesional de Counter Strike
+          Global Offensive. Nacido en Kiev, Ukrania el 2 de octubre
+        de 1997.</p>
+          <p>S1mple es considerado uno de los mejores jugadores de CsGo de la
+          historia. Actualmente juega en Na'Vi ( Natus Vincere) </p>
+        </div>
+  </div>
+  </div>
+    </div>
+    <div class="column">
+    <img src="./img/s1mple.jpg" style="width:100%" class="image">
+    <div class="overlay">
+      <button id="myBtn3">S1mple</button>
+
+      <!-- The Modal -->
+      <div id="myModal3" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Oleksandr Kostyliev, es un jugador profesional de Counter Strike
+          Global Offensive. Nacido en Kiev, Ukrania el 2 de octubre
+        de 1997.</p>
+          <p>S1mple es considerado uno de los mejores jugadores de CsGo de la
+          historia. Actualmente juega en Na'Vi ( Natus Vincere) </p>
+        </div>
+  </div>
+  </div>
+</div>
+</div>
+  <footer>
+    &copy; Copyright 2019. Todos los derechos reservados. @Authors: Gonzalez Federico, Osycka Liam.
+  </footer>
+
+<script type="text/javascript">
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+</body>
+</html>

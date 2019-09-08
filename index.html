@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Esports Zone</title>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <a href="#contenido" class="ancla">Salto a info</a>
+  <header>
+    <h1>Esports Zone </h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="torneos.html">Torneos</a></li>
+      <li><a href="jugadores.html">Jugadores</a></li>
+    </ul>
+  </nav>
+  <div class="row">
+    <h1>¿Qué son los "Esports" ?</h1>
+  </div>
+  <div class="row">
+    <div class="info">
+      <a name="contenido"> </a>
+      <a href="#carousel" class="ancla"> Salto a carousel</a>
+
+
+    <p>Los deportes electrónicos o esports 1​ son competiciones de videojuegos
+       que se han convertido en eventos de gran popularidad.2​ Por lo general
+        los deportes electrónicos son competiciones de videojuegos
+         multijugador, particularmente entre jugadores profesionales.
+          Los géneros más comunes en los videojuegos asociados a los esports
+           son: estrategia en tiempo real, disparos en primera persona y arenas
+            de batalla multijugador online (mejor conocido por sus siglas en
+             inglés MOBA, Videojuego multijugador de arena de batalla
+              en línea).</p>
+
+       </div>
+  </div>
+      <div class="row">
+      <div class="carousel-container">
+        <a name="carousel"></a>
+      <div class="mySlides fade">
+        <img src="./img/esports-audiencia.jpg" style="width:100%" alt="Foto de Audiencia de Esports">
+
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./img/esports-copa.jpg" style="width:100%" alt="Foto de copa de Esports">
+
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./img/esports-audiencia02.jpg" style="width:100%" alt= "Foto del publico de un torneo de Esports">
+
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+
+
+  <footer>
+    &copy; Copyright 2019. Todos los derechos reservados. @Authors: Gonzalez Federico, Osycka Liam.
+  </footer>
+  <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
+</body>
+</html>

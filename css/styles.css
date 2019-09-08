@@ -1,0 +1,272 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #141b41;
+  height: 100%;
+}
+header{
+  padding: 2%;
+  background-color:#086375;
+}
+h1{
+  font-family:'Sofia';
+  font-size: 40px;
+  color:white;
+}
+nav{
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+nav ul{
+
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+  background-color:#3c1642;
+
+}
+nav ul li{
+  float: left;
+}
+
+nav ul li a{
+ display: block;
+ color: white;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+.row .column1 ul{
+  list-style-type: none;
+  margin:1em;
+  padding:0;
+  overflow: hidden;
+  background-color:#3c1642;
+}
+.row .column1 ul li a{
+  display:block;
+  color:white;
+  padding:14px 16px;
+  text-decoration: none;
+
+}
+
+.row .column2 ul li{
+  color:white;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  background-color: #111;
+  color: white;
+}
+a:visited{
+  text-decoration: none;
+}
+.ancla{
+  text-decoration: none;
+  color:#141b41;
+}
+.column{
+  float:left;
+  width:33.33%;
+  padding:5px;
+  position:relative;
+  overflow: hidden;
+}
+.column .overlay{
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #5b4e77;
+
+}
+.column:hover .overlay {
+  opacity: 1;
+}
+.image {
+  display: block;
+  width: 100%;
+
+}
+.info{
+
+  margin-left: 1em;
+
+}
+
+.text {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.column1 {
+  float: left;
+  width: 20%;
+
+  position:relative;
+
+}
+.column1 a{
+  color:white;
+}
+.column2{
+  float: left;
+  width: 80%;
+
+  background-color: #4d7c8a;
+  position:relative;
+
+}
+@media only screen and (max-width: 768px) {
+  .column1{
+    width:50%;
+  }
+  .column2{
+    width:50%;
+  }
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row h1{
+  color:white;
+  text-align: center;
+}
+p{
+  margin-left: 1em;
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  color:white;
+  align: center;
+}
+footer{
+  padding: 4%;
+  background-color:#086375;
+  text-align: center;
+  color:white;
+}
+
+
+.carousel-container {
+  max-width: 100%;
+  position: relative;
+
+}
+.carousel-container .mySlides img{
+  max-height: 500px;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: purple;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #5b4e77;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#myBtn{
+  background-color:#3c1642 ;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
